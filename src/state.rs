@@ -5,19 +5,18 @@ use std::{fs, path::Path};
 use anyhow::{Context, Result};
 use serde::{Deserialize, Serialize};
 
-
 const STATE_FILE: &str = "game_state.toml";
 
 #[derive(Serialize, Deserialize)]
 pub struct State {
     current_level: u32,
-    completed_levels: Vec<CtfLevel>,
+    pub completed_levels: Vec<CtfLevel>,
 }
 
 #[derive(Serialize, Deserialize)]
 pub struct CtfLevel {
-    level : u32,
-    score : u32,
+    pub level: u32,
+    pub score: u32,
     // todo fields
 }
 
@@ -45,8 +44,8 @@ impl State {
     }
 
     pub fn save(&self) -> Result<()> {
-        let toml_string = toml::to_string_pretty(self)
-            .context("Failed to serialize state to TOML")?;
+        let toml_string =
+            toml::to_string_pretty(self).context("Failed to serialize state to TOML")?;
         fs::write(STATE_FILE, toml_string)
             .with_context(|| format!("Failed to write state file: {}", STATE_FILE))?;
         Ok(())
@@ -69,5 +68,4 @@ impl State {
             .find(|&l| l.level == level)
             .map(|l| l.score)
     }
-
 }

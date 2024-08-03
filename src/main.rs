@@ -1,11 +1,12 @@
 use anyhow::{Ok, Result};
 use clap::Parser;
 
+mod bitcoin;
 mod cli;
 mod ctf;
 mod level;
+mod levels;
 mod state;
-mod bitcoin;
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -14,7 +15,6 @@ async fn main() -> Result<()> {
     // initialize cli
     let cli = cli::Cli::parse();
 
-    let ctf = ctf::Ctf::new()?;
-    ctf.run(cli).await?;
-    Ok(())
+    let mut ctf = ctf::Ctf::new()?;
+    ctf.run(cli).await
 }

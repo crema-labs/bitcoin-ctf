@@ -5,11 +5,10 @@
 use anyhow::{Ok, Result};
 use colored::Colorize;
 
-use crate::{cli::Cli, level::Level, state::State};
+use crate::{cli::Cli, level::Level, levels::LevelOne, state::State};
 
 pub struct Ctf {
     state: State,
-    levels: Vec<Box<dyn Level>>,
 }
 
 impl Ctf {
@@ -17,11 +16,10 @@ impl Ctf {
         // Initialize game state and levels
         Ok(Self {
             state: State::load()?,
-            levels: vec![],
         })
     }
 
-    pub async fn run(&self, cli: Cli) -> Result<()> {
+    pub async fn run(&mut self, cli: Cli) -> Result<()> {
         match &cli.command {
             crate::cli::Commands::New => self.start_new_game().await,
             crate::cli::Commands::Continue => self.continue_game().await,
@@ -30,16 +28,23 @@ impl Ctf {
         }
     }
 
-    async fn start_new_game(&self) -> Result<()> {
-        // todo
+    async fn start_new_game(&mut self) -> Result<()> {
+        println!("{}", "Starting a new game!".green());
         // clean and save Ctf stats
         // start from level 1
-        println!("{}", "Starting a new game!".green());
+        self.state.initialize_state()?;
+
+        let tx = LevelOne::setup().await?;
+        if LevelOne::run(tx).await? {
+            self.state.complete_level(1 , 100)?;
+            self.state.save()?;
+        }
+
         Ok(())
     }
 
     async fn continue_game(&self) -> Result<()> {
-        // todo
+        // Note : before continuing the game if current level > 1, then check if user passed previous level with atleast 60% of score.
         println!(
             "{} {}",
             "Continuing the game from level".green(),

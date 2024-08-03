@@ -1,0 +1,746 @@
+
+
+
+
+
+2024-08-03T19:48:17Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:48:17Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:48:17Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:48:17Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:48:17Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:48:17Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:48:17Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:48:17Z Using RdSeed as an additional entropy source
+2024-08-03T19:48:17Z Using RdRand as an additional entropy source
+2024-08-03T19:48:17Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:48:17Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:48:17Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:48:17Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:48:17Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:48:17Z Command-line arg: listen="0"
+2024-08-03T19:48:17Z Command-line arg: regtest=""
+2024-08-03T19:48:17Z Command-line arg: rpcport="42745"
+2024-08-03T19:48:17Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:48:17Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:48:17Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:48:17Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:48:17Z Script verification uses 7 additional threads
+2024-08-03T19:48:17Z scheduler thread start
+2024-08-03T19:48:17Z [http] creating work queue of depth 16
+2024-08-03T19:48:17Z Using random cookie authentication.
+2024-08-03T19:48:17Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:48:17Z [http] starting 4 worker threads
+2024-08-03T19:48:17Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:48:17Z init message: Verifying wallet(s)…
+2024-08-03T19:48:17Z Using /16 prefix for IP bucketing
+2024-08-03T19:48:17Z init message: Loading P2P addresses…
+2024-08-03T19:48:18Z Creating peers.dat because the file was not found ("/mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/peers.dat")
+2024-08-03T19:48:18Z init message: Loading banlist…
+2024-08-03T19:48:18Z Recreating the banlist database
+2024-08-03T19:48:18Z SetNetworkActive: true
+2024-08-03T19:48:18Z Failed to read fee estimates from /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/fee_estimates.dat. Continue anyway.
+2024-08-03T19:48:18Z Cache configuration:
+2024-08-03T19:48:18Z * Using 2.0 MiB for block index database
+2024-08-03T19:48:18Z * Using 8.0 MiB for chain state database
+2024-08-03T19:48:18Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:48:18Z init message: Loading block index…
+2024-08-03T19:48:18Z Validating signatures for all blocks.
+2024-08-03T19:48:18Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:48:18Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:48:18Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:48:18Z Opened LevelDB successfully
+2024-08-03T19:48:18Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:48:18Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:48:18Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2024-08-03T19:48:18Z Checking all blk files are present...
+2024-08-03T19:48:18Z Initializing databases...
+2024-08-03T19:48:18Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:48:18Z Opened LevelDB successfully
+2024-08-03T19:48:18Z Wrote new obfuscate key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:48:18Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:48:18Z init message: Verifying blocks…
+2024-08-03T19:48:18Z  block index             720ms
+2024-08-03T19:48:18Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:48:18Z loadblk thread start
+2024-08-03T19:48:18Z UpdateTip: new best=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 version=0x00000001 log2_work=1.000000 tx=1 date='2011-02-02T23:16:42Z' progress=1.000000 cache=0.0MiB(0txo)
+2024-08-03T19:48:18Z block tree size = 1
+2024-08-03T19:48:18Z Failed to open mempool file from disk. Continuing anyway.
+2024-08-03T19:48:18Z loadblk thread exit
+2024-08-03T19:48:18Z nBestHeight = 0
+2024-08-03T19:48:18Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:48:18Z init message: Starting network threads…
+2024-08-03T19:48:18Z net thread start
+2024-08-03T19:48:18Z opencon thread start
+2024-08-03T19:48:18Z addcon thread start
+2024-08-03T19:48:18Z init message: Done loading
+2024-08-03T19:48:18Z dnsseed thread start
+2024-08-03T19:48:18Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:48:18Z msghand thread start
+2024-08-03T19:48:18Z 0 addresses found from DNS seeds
+2024-08-03T19:48:18Z dnsseed thread exit
+2024-08-03T19:48:18Z Using SQLite Version 3.38.5
+2024-08-03T19:48:18Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:48:18Z init message: Loading wallet…
+2024-08-03T19:48:18Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:48:18Z [default] Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total. Unknown wallet records: 0
+2024-08-03T19:48:18Z [default] Setting minversion to 169900
+2024-08-03T19:48:19Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:48:19Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:48:19Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:48:19Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:48:19Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:48:20Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:48:20Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:48:20Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:48:20Z [default] Wallet completed loading in            1565ms
+2024-08-03T19:48:20Z [default] setKeyPool.size() = 8000
+2024-08-03T19:48:20Z [default] mapWallet.size() = 0
+2024-08-03T19:48:20Z [default] m_address_book.size() = 0
+2024-08-03T19:48:20Z addcon thread exit
+2024-08-03T19:48:20Z opencon thread exit
+2024-08-03T19:48:20Z net thread exit
+2024-08-03T19:48:20Z Shutdown: In progress...
+2024-08-03T19:48:20Z msghand thread exit
+2024-08-03T19:48:20Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:48:20Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2024-08-03T19:48:20Z scheduler thread exit
+2024-08-03T19:48:20Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:48:20Z Dumped mempool: 6.512e-06s to copy, 0.019056s to dump
+2024-08-03T19:48:20Z [default] Releasing wallet
+2024-08-03T19:48:20Z Shutdown: done
+
+
+
+
+
+2024-08-03T19:49:22Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:49:22Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:49:22Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:49:22Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:49:22Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:49:22Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:49:22Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:49:22Z Using RdSeed as an additional entropy source
+2024-08-03T19:49:22Z Using RdRand as an additional entropy source
+2024-08-03T19:49:22Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:49:22Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:49:22Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:49:22Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:49:22Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:49:22Z Command-line arg: listen="0"
+2024-08-03T19:49:22Z Command-line arg: regtest=""
+2024-08-03T19:49:22Z Command-line arg: rpcport="37485"
+2024-08-03T19:49:22Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:49:22Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:49:22Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:49:22Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:49:22Z Script verification uses 7 additional threads
+2024-08-03T19:49:22Z scheduler thread start
+2024-08-03T19:49:22Z [http] creating work queue of depth 16
+2024-08-03T19:49:22Z Using random cookie authentication.
+2024-08-03T19:49:22Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:49:22Z [http] starting 4 worker threads
+2024-08-03T19:49:22Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:49:22Z init message: Verifying wallet(s)…
+2024-08-03T19:49:22Z Using /16 prefix for IP bucketing
+2024-08-03T19:49:22Z init message: Loading P2P addresses…
+2024-08-03T19:49:22Z Loaded 0 addresses from peers.dat  3ms
+2024-08-03T19:49:22Z init message: Loading banlist…
+2024-08-03T19:49:22Z SetNetworkActive: true
+2024-08-03T19:49:22Z Cache configuration:
+2024-08-03T19:49:22Z * Using 2.0 MiB for block index database
+2024-08-03T19:49:22Z * Using 8.0 MiB for chain state database
+2024-08-03T19:49:22Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:49:22Z init message: Loading block index…
+2024-08-03T19:49:22Z Validating signatures for all blocks.
+2024-08-03T19:49:22Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:49:22Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:49:22Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:49:22Z Opened LevelDB successfully
+2024-08-03T19:49:22Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:49:22Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:49:22Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2011-02-02...2011-02-02)
+2024-08-03T19:49:22Z Checking all blk files are present...
+2024-08-03T19:49:22Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:49:22Z Opened LevelDB successfully
+2024-08-03T19:49:22Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:49:22Z Loaded best chain: hashBestChain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 date=2011-02-02T23:16:42Z progress=1.000000
+2024-08-03T19:49:22Z init message: Verifying blocks…
+2024-08-03T19:49:22Z  block index              86ms
+2024-08-03T19:49:22Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:49:22Z block tree size = 1
+2024-08-03T19:49:22Z nBestHeight = 0
+2024-08-03T19:49:22Z loadblk thread start
+2024-08-03T19:49:22Z Loaded 0 addresses from "anchors.dat"
+2024-08-03T19:49:22Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2024-08-03T19:49:22Z loadblk thread exit
+2024-08-03T19:49:22Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:49:22Z init message: Starting network threads…
+2024-08-03T19:49:22Z net thread start
+2024-08-03T19:49:22Z dnsseed thread start
+2024-08-03T19:49:22Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:49:22Z addcon thread start
+2024-08-03T19:49:22Z init message: Done loading
+2024-08-03T19:49:22Z opencon thread start
+2024-08-03T19:49:22Z msghand thread start
+2024-08-03T19:49:22Z Using SQLite Version 3.38.5
+2024-08-03T19:49:22Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:49:22Z init message: Loading wallet…
+2024-08-03T19:49:22Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:49:22Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:49:23Z 0 addresses found from DNS seeds
+2024-08-03T19:49:23Z dnsseed thread exit
+2024-08-03T19:49:23Z [default] Keys: 8 plaintext, 0 encrypted, 0 w/ metadata, 8 total. Unknown wallet records: 0
+2024-08-03T19:49:23Z [default] Wallet completed loading in             534ms
+2024-08-03T19:49:23Z [default] setKeyPool.size() = 8000
+2024-08-03T19:49:23Z [default] mapWallet.size() = 0
+2024-08-03T19:49:23Z [default] m_address_book.size() = 1
+2024-08-03T19:49:24Z net thread exit
+2024-08-03T19:49:24Z addcon thread exit
+2024-08-03T19:49:24Z Shutdown: In progress...
+2024-08-03T19:49:24Z opencon thread exit
+2024-08-03T19:49:24Z msghand thread exit
+2024-08-03T19:49:24Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:49:24Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2024-08-03T19:49:24Z scheduler thread exit
+2024-08-03T19:49:24Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:49:24Z Dumped mempool: 1.918e-06s to copy, 0.0130833s to dump
+2024-08-03T19:49:24Z [default] Releasing wallet
+2024-08-03T19:49:24Z Shutdown: done
+
+
+
+
+
+2024-08-03T19:50:25Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:50:25Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:50:25Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:50:25Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:50:25Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:50:25Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:50:25Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:50:25Z Using RdSeed as an additional entropy source
+2024-08-03T19:50:25Z Using RdRand as an additional entropy source
+2024-08-03T19:50:25Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:50:25Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:50:25Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:50:25Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:50:25Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:50:25Z Command-line arg: listen="0"
+2024-08-03T19:50:25Z Command-line arg: regtest=""
+2024-08-03T19:50:25Z Command-line arg: rpcport="39521"
+2024-08-03T19:50:25Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:50:25Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:50:25Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:50:25Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:50:25Z Script verification uses 7 additional threads
+2024-08-03T19:50:25Z scheduler thread start
+2024-08-03T19:50:25Z [http] creating work queue of depth 16
+2024-08-03T19:50:25Z Using random cookie authentication.
+2024-08-03T19:50:25Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:50:25Z [http] starting 4 worker threads
+2024-08-03T19:50:25Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:50:25Z init message: Verifying wallet(s)…
+2024-08-03T19:50:25Z Using /16 prefix for IP bucketing
+2024-08-03T19:50:25Z init message: Loading P2P addresses…
+2024-08-03T19:50:25Z Loaded 0 addresses from peers.dat  2ms
+2024-08-03T19:50:25Z init message: Loading banlist…
+2024-08-03T19:50:25Z SetNetworkActive: true
+2024-08-03T19:50:25Z Cache configuration:
+2024-08-03T19:50:25Z * Using 2.0 MiB for block index database
+2024-08-03T19:50:25Z * Using 8.0 MiB for chain state database
+2024-08-03T19:50:25Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:50:25Z init message: Loading block index…
+2024-08-03T19:50:25Z Validating signatures for all blocks.
+2024-08-03T19:50:25Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:50:25Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:50:25Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:50:25Z Opened LevelDB successfully
+2024-08-03T19:50:25Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:50:25Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:50:25Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2011-02-02...2011-02-02)
+2024-08-03T19:50:25Z Checking all blk files are present...
+2024-08-03T19:50:25Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:50:25Z Opened LevelDB successfully
+2024-08-03T19:50:25Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:50:25Z Loaded best chain: hashBestChain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 date=2011-02-02T23:16:42Z progress=1.000000
+2024-08-03T19:50:25Z init message: Verifying blocks…
+2024-08-03T19:50:25Z  block index              85ms
+2024-08-03T19:50:25Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:50:25Z block tree size = 1
+2024-08-03T19:50:25Z nBestHeight = 0
+2024-08-03T19:50:25Z loadblk thread start
+2024-08-03T19:50:25Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2024-08-03T19:50:25Z Loaded 0 addresses from "anchors.dat"
+2024-08-03T19:50:25Z loadblk thread exit
+2024-08-03T19:50:25Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:50:25Z init message: Starting network threads…
+2024-08-03T19:50:25Z net thread start
+2024-08-03T19:50:25Z dnsseed thread start
+2024-08-03T19:50:25Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:50:25Z init message: Done loading
+2024-08-03T19:50:25Z opencon thread start
+2024-08-03T19:50:25Z addcon thread start
+2024-08-03T19:50:25Z msghand thread start
+2024-08-03T19:50:25Z 0 addresses found from DNS seeds
+2024-08-03T19:50:25Z dnsseed thread exit
+2024-08-03T19:50:26Z Using SQLite Version 3.38.5
+2024-08-03T19:50:26Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:50:26Z init message: Loading wallet…
+2024-08-03T19:50:26Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:50:26Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:50:26Z [default] Keys: 8 plaintext, 0 encrypted, 0 w/ metadata, 8 total. Unknown wallet records: 0
+2024-08-03T19:50:26Z [default] Wallet completed loading in             649ms
+2024-08-03T19:50:26Z [default] setKeyPool.size() = 8000
+2024-08-03T19:50:26Z [default] mapWallet.size() = 0
+2024-08-03T19:50:26Z [default] m_address_book.size() = 2
+2024-08-03T19:50:33Z opencon thread exit
+2024-08-03T19:50:33Z net thread exit
+2024-08-03T19:50:33Z Shutdown: In progress...
+2024-08-03T19:50:33Z addcon thread exit
+2024-08-03T19:50:33Z msghand thread exit
+2024-08-03T19:50:33Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:50:33Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2024-08-03T19:50:33Z scheduler thread exit
+2024-08-03T19:50:33Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:50:33Z Dumped mempool: 1.932e-06s to copy, 0.0115588s to dump
+2024-08-03T19:50:33Z [default] Releasing wallet
+2024-08-03T19:50:33Z Shutdown: done
+
+
+
+
+
+2024-08-03T19:52:33Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:52:33Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:52:33Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:52:33Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:52:33Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:52:33Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:52:33Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:52:33Z Using RdSeed as an additional entropy source
+2024-08-03T19:52:33Z Using RdRand as an additional entropy source
+2024-08-03T19:52:33Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:52:33Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:52:33Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:52:33Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:52:33Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:52:33Z Command-line arg: listen="0"
+2024-08-03T19:52:33Z Command-line arg: regtest=""
+2024-08-03T19:52:33Z Command-line arg: rpcport="37249"
+2024-08-03T19:52:33Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:52:33Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:52:33Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:52:33Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:52:33Z Script verification uses 7 additional threads
+2024-08-03T19:52:33Z scheduler thread start
+2024-08-03T19:52:33Z [http] creating work queue of depth 16
+2024-08-03T19:52:33Z Using random cookie authentication.
+2024-08-03T19:52:33Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:52:33Z [http] starting 4 worker threads
+2024-08-03T19:52:33Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:52:33Z init message: Verifying wallet(s)…
+2024-08-03T19:52:33Z Using /16 prefix for IP bucketing
+2024-08-03T19:52:33Z init message: Loading P2P addresses…
+2024-08-03T19:52:33Z Loaded 0 addresses from peers.dat  2ms
+2024-08-03T19:52:33Z init message: Loading banlist…
+2024-08-03T19:52:33Z SetNetworkActive: true
+2024-08-03T19:52:33Z Cache configuration:
+2024-08-03T19:52:33Z * Using 2.0 MiB for block index database
+2024-08-03T19:52:33Z * Using 8.0 MiB for chain state database
+2024-08-03T19:52:33Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:52:33Z init message: Loading block index…
+2024-08-03T19:52:33Z Validating signatures for all blocks.
+2024-08-03T19:52:33Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:52:33Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:52:33Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:52:33Z Opened LevelDB successfully
+2024-08-03T19:52:33Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:52:33Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:52:33Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2011-02-02...2011-02-02)
+2024-08-03T19:52:33Z Checking all blk files are present...
+2024-08-03T19:52:33Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:52:33Z Opened LevelDB successfully
+2024-08-03T19:52:33Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:52:33Z Loaded best chain: hashBestChain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 date=2011-02-02T23:16:42Z progress=1.000000
+2024-08-03T19:52:33Z init message: Verifying blocks…
+2024-08-03T19:52:33Z  block index             101ms
+2024-08-03T19:52:33Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:52:33Z block tree size = 1
+2024-08-03T19:52:33Z nBestHeight = 0
+2024-08-03T19:52:33Z loadblk thread start
+2024-08-03T19:52:33Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2024-08-03T19:52:33Z Loaded 0 addresses from "anchors.dat"
+2024-08-03T19:52:33Z loadblk thread exit
+2024-08-03T19:52:33Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:52:33Z init message: Starting network threads…
+2024-08-03T19:52:33Z net thread start
+2024-08-03T19:52:33Z dnsseed thread start
+2024-08-03T19:52:33Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:52:33Z addcon thread start
+2024-08-03T19:52:33Z msghand thread start
+2024-08-03T19:52:33Z opencon thread start
+2024-08-03T19:52:33Z init message: Done loading
+2024-08-03T19:52:33Z 0 addresses found from DNS seeds
+2024-08-03T19:52:33Z dnsseed thread exit
+2024-08-03T19:52:33Z Using SQLite Version 3.38.5
+2024-08-03T19:52:33Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:52:33Z init message: Loading wallet…
+2024-08-03T19:52:33Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:52:33Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:52:34Z [default] Keys: 8 plaintext, 0 encrypted, 0 w/ metadata, 8 total. Unknown wallet records: 0
+2024-08-03T19:52:34Z [default] Wallet completed loading in             586ms
+2024-08-03T19:52:34Z [default] setKeyPool.size() = 8000
+2024-08-03T19:52:34Z [default] mapWallet.size() = 0
+2024-08-03T19:52:34Z [default] m_address_book.size() = 3
+2024-08-03T19:52:41Z opencon thread exit
+2024-08-03T19:52:41Z addcon thread exit
+2024-08-03T19:52:41Z net thread exit
+2024-08-03T19:52:41Z Shutdown: In progress...
+2024-08-03T19:52:41Z msghand thread exit
+2024-08-03T19:52:41Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:52:41Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.02s)
+2024-08-03T19:52:41Z scheduler thread exit
+2024-08-03T19:52:41Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:52:41Z Dumped mempool: 1.91e-06s to copy, 0.0165046s to dump
+2024-08-03T19:52:41Z [default] Releasing wallet
+2024-08-03T19:52:41Z Shutdown: done
+
+
+
+
+
+2024-08-03T19:54:09Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:54:09Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:54:09Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:54:09Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:54:09Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:54:09Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:54:09Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:54:09Z Using RdSeed as an additional entropy source
+2024-08-03T19:54:09Z Using RdRand as an additional entropy source
+2024-08-03T19:54:09Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:54:09Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:54:09Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:54:09Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:54:09Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:54:09Z Command-line arg: listen="0"
+2024-08-03T19:54:09Z Command-line arg: regtest=""
+2024-08-03T19:54:09Z Command-line arg: rpcport="34459"
+2024-08-03T19:54:09Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:54:09Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:54:09Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:54:09Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:54:09Z Script verification uses 7 additional threads
+2024-08-03T19:54:09Z scheduler thread start
+2024-08-03T19:54:09Z [http] creating work queue of depth 16
+2024-08-03T19:54:09Z Using random cookie authentication.
+2024-08-03T19:54:09Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:54:09Z [http] starting 4 worker threads
+2024-08-03T19:54:09Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:54:09Z init message: Verifying wallet(s)…
+2024-08-03T19:54:09Z Using /16 prefix for IP bucketing
+2024-08-03T19:54:09Z init message: Loading P2P addresses…
+2024-08-03T19:54:09Z Loaded 0 addresses from peers.dat  2ms
+2024-08-03T19:54:09Z init message: Loading banlist…
+2024-08-03T19:54:09Z SetNetworkActive: true
+2024-08-03T19:54:09Z Cache configuration:
+2024-08-03T19:54:09Z * Using 2.0 MiB for block index database
+2024-08-03T19:54:09Z * Using 8.0 MiB for chain state database
+2024-08-03T19:54:09Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:54:09Z init message: Loading block index…
+2024-08-03T19:54:09Z Validating signatures for all blocks.
+2024-08-03T19:54:09Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:54:09Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:54:09Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:54:09Z Opened LevelDB successfully
+2024-08-03T19:54:09Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:54:09Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:54:09Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2011-02-02...2011-02-02)
+2024-08-03T19:54:09Z Checking all blk files are present...
+2024-08-03T19:54:09Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:54:10Z Opened LevelDB successfully
+2024-08-03T19:54:10Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:54:10Z Loaded best chain: hashBestChain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 date=2011-02-02T23:16:42Z progress=1.000000
+2024-08-03T19:54:10Z init message: Verifying blocks…
+2024-08-03T19:54:10Z  block index             115ms
+2024-08-03T19:54:10Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:54:10Z block tree size = 1
+2024-08-03T19:54:10Z nBestHeight = 0
+2024-08-03T19:54:10Z loadblk thread start
+2024-08-03T19:54:10Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2024-08-03T19:54:10Z Loaded 0 addresses from "anchors.dat"
+2024-08-03T19:54:10Z loadblk thread exit
+2024-08-03T19:54:10Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:54:10Z init message: Starting network threads…
+2024-08-03T19:54:10Z net thread start
+2024-08-03T19:54:10Z init message: Done loading
+2024-08-03T19:54:10Z addcon thread start
+2024-08-03T19:54:10Z opencon thread start
+2024-08-03T19:54:10Z msghand thread start
+2024-08-03T19:54:10Z dnsseed thread start
+2024-08-03T19:54:10Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:54:10Z 0 addresses found from DNS seeds
+2024-08-03T19:54:10Z dnsseed thread exit
+2024-08-03T19:54:10Z Using SQLite Version 3.38.5
+2024-08-03T19:54:10Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:54:10Z init message: Loading wallet…
+2024-08-03T19:54:10Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:54:10Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:54:10Z [default] Keys: 8 plaintext, 0 encrypted, 0 w/ metadata, 8 total. Unknown wallet records: 0
+2024-08-03T19:54:10Z [default] Wallet completed loading in             523ms
+2024-08-03T19:54:10Z [default] setKeyPool.size() = 8000
+2024-08-03T19:54:10Z [default] mapWallet.size() = 0
+2024-08-03T19:54:10Z [default] m_address_book.size() = 4
+2024-08-03T19:54:16Z net thread exit
+2024-08-03T19:54:16Z addcon thread exit
+2024-08-03T19:54:16Z opencon thread exit
+2024-08-03T19:54:16Z Shutdown: In progress...
+2024-08-03T19:54:16Z msghand thread exit
+2024-08-03T19:54:16Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:54:16Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2024-08-03T19:54:16Z scheduler thread exit
+2024-08-03T19:54:16Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:54:17Z Dumped mempool: 1.315e-06s to copy, 0.0149505s to dump
+2024-08-03T19:54:17Z [default] Releasing wallet
+2024-08-03T19:54:17Z Shutdown: done
+
+
+
+
+
+2024-08-03T19:55:16Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:55:16Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:55:16Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:55:16Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:55:16Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:55:16Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:55:16Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:55:16Z Using RdSeed as an additional entropy source
+2024-08-03T19:55:16Z Using RdRand as an additional entropy source
+2024-08-03T19:55:16Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:55:16Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:55:16Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:55:16Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:55:16Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:55:16Z Command-line arg: listen="0"
+2024-08-03T19:55:16Z Command-line arg: regtest=""
+2024-08-03T19:55:16Z Command-line arg: rpcport="38259"
+2024-08-03T19:55:16Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:55:16Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:55:16Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:55:16Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:55:16Z Script verification uses 7 additional threads
+2024-08-03T19:55:16Z scheduler thread start
+2024-08-03T19:55:17Z [http] creating work queue of depth 16
+2024-08-03T19:55:17Z Using random cookie authentication.
+2024-08-03T19:55:17Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:55:17Z [http] starting 4 worker threads
+2024-08-03T19:55:17Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:55:17Z init message: Verifying wallet(s)…
+2024-08-03T19:55:17Z Using /16 prefix for IP bucketing
+2024-08-03T19:55:17Z init message: Loading P2P addresses…
+2024-08-03T19:55:17Z Loaded 0 addresses from peers.dat  3ms
+2024-08-03T19:55:17Z init message: Loading banlist…
+2024-08-03T19:55:17Z SetNetworkActive: true
+2024-08-03T19:55:17Z Cache configuration:
+2024-08-03T19:55:17Z * Using 2.0 MiB for block index database
+2024-08-03T19:55:17Z * Using 8.0 MiB for chain state database
+2024-08-03T19:55:17Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:55:17Z init message: Loading block index…
+2024-08-03T19:55:17Z Validating signatures for all blocks.
+2024-08-03T19:55:17Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:55:17Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:55:17Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:55:17Z Opened LevelDB successfully
+2024-08-03T19:55:17Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:55:17Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:55:17Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2011-02-02...2011-02-02)
+2024-08-03T19:55:17Z Checking all blk files are present...
+2024-08-03T19:55:17Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:55:17Z Opened LevelDB successfully
+2024-08-03T19:55:17Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:55:17Z Loaded best chain: hashBestChain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 date=2011-02-02T23:16:42Z progress=1.000000
+2024-08-03T19:55:17Z init message: Verifying blocks…
+2024-08-03T19:55:17Z  block index              99ms
+2024-08-03T19:55:17Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:55:17Z block tree size = 1
+2024-08-03T19:55:17Z nBestHeight = 0
+2024-08-03T19:55:17Z loadblk thread start
+2024-08-03T19:55:17Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2024-08-03T19:55:17Z Loaded 0 addresses from "anchors.dat"
+2024-08-03T19:55:17Z loadblk thread exit
+2024-08-03T19:55:17Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:55:17Z init message: Starting network threads…
+2024-08-03T19:55:17Z net thread start
+2024-08-03T19:55:17Z dnsseed thread start
+2024-08-03T19:55:17Z msghand thread start
+2024-08-03T19:55:17Z opencon thread start
+2024-08-03T19:55:17Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:55:17Z init message: Done loading
+2024-08-03T19:55:17Z addcon thread start
+2024-08-03T19:55:17Z 0 addresses found from DNS seeds
+2024-08-03T19:55:17Z dnsseed thread exit
+2024-08-03T19:55:17Z Using SQLite Version 3.38.5
+2024-08-03T19:55:17Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:55:17Z init message: Loading wallet…
+2024-08-03T19:55:17Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:55:17Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:55:18Z [default] Keys: 8 plaintext, 0 encrypted, 0 w/ metadata, 8 total. Unknown wallet records: 0
+2024-08-03T19:55:18Z [default] Wallet completed loading in             686ms
+2024-08-03T19:55:18Z [default] setKeyPool.size() = 8000
+2024-08-03T19:55:18Z [default] mapWallet.size() = 0
+2024-08-03T19:55:18Z [default] m_address_book.size() = 5
+2024-08-03T19:56:08Z addcon thread exit
+2024-08-03T19:56:08Z opencon thread exit
+2024-08-03T19:56:08Z net thread exit
+2024-08-03T19:56:08Z Shutdown: In progress...
+2024-08-03T19:56:09Z msghand thread exit
+2024-08-03T19:56:09Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:56:09Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2024-08-03T19:56:09Z scheduler thread exit
+2024-08-03T19:56:09Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:56:09Z Dumped mempool: 2.275e-06s to copy, 0.0148327s to dump
+2024-08-03T19:56:09Z [default] Releasing wallet
+2024-08-03T19:56:09Z Shutdown: done
+
+
+
+
+
+2024-08-03T19:56:57Z Bitcoin Core version v24.0.1 (release build)
+2024-08-03T19:56:57Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -upnp=0
+2024-08-03T19:56:57Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -natpmp=0
+2024-08-03T19:56:57Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -discover=0
+2024-08-03T19:56:57Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -listenonion=0
+2024-08-03T19:56:57Z InitParameterInteraction: parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2024-08-03T19:56:57Z Using the 'x86_shani(1way,2way)' SHA256 implementation
+2024-08-03T19:56:57Z Using RdSeed as an additional entropy source
+2024-08-03T19:56:57Z Using RdRand as an additional entropy source
+2024-08-03T19:56:57Z Default data directory /home/kingpanther/.bitcoin
+2024-08-03T19:56:57Z Using data directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest
+2024-08-03T19:56:57Z Config file: /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/bitcoin.conf (not found, skipping)
+2024-08-03T19:56:57Z Command-line arg: datadir="bin/bitcoin/static"
+2024-08-03T19:56:57Z Command-line arg: fallbackfee="0.0001"
+2024-08-03T19:56:57Z Command-line arg: listen="0"
+2024-08-03T19:56:57Z Command-line arg: regtest=""
+2024-08-03T19:56:57Z Command-line arg: rpcport="42805"
+2024-08-03T19:56:57Z Using at most 125 automatic connections (1024 file descriptors available)
+2024-08-03T19:56:57Z Warning: relative datadir option 'bin/bitcoin/static' specified, which will be interpreted relative to the current working directory '/mnt/d/codebases/crema/btc-ctf'. This is fragile, because if bitcoin is started in the future from a different location, it will be unable to locate the current data files. There could also be data loss if bitcoin is started while in a temporary directory.
+2024-08-03T19:56:57Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2024-08-03T19:56:57Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2024-08-03T19:56:57Z Script verification uses 7 additional threads
+2024-08-03T19:56:57Z scheduler thread start
+2024-08-03T19:56:57Z [http] creating work queue of depth 16
+2024-08-03T19:56:57Z Using random cookie authentication.
+2024-08-03T19:56:57Z Generated RPC authentication cookie /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/.cookie
+2024-08-03T19:56:57Z [http] starting 4 worker threads
+2024-08-03T19:56:57Z Using wallet directory /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets
+2024-08-03T19:56:57Z init message: Verifying wallet(s)…
+2024-08-03T19:56:57Z Using /16 prefix for IP bucketing
+2024-08-03T19:56:57Z init message: Loading P2P addresses…
+2024-08-03T19:56:57Z Loaded 0 addresses from peers.dat  2ms
+2024-08-03T19:56:57Z init message: Loading banlist…
+2024-08-03T19:56:57Z SetNetworkActive: true
+2024-08-03T19:56:57Z Cache configuration:
+2024-08-03T19:56:57Z * Using 2.0 MiB for block index database
+2024-08-03T19:56:57Z * Using 8.0 MiB for chain state database
+2024-08-03T19:56:57Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2024-08-03T19:56:57Z init message: Loading block index…
+2024-08-03T19:56:57Z Validating signatures for all blocks.
+2024-08-03T19:56:57Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2024-08-03T19:56:57Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2024-08-03T19:56:57Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index
+2024-08-03T19:56:57Z Opened LevelDB successfully
+2024-08-03T19:56:57Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/blocks/index: 0000000000000000
+2024-08-03T19:56:57Z LoadBlockIndexDB: last block file = 0
+2024-08-03T19:56:57Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2011-02-02...2011-02-02)
+2024-08-03T19:56:57Z Checking all blk files are present...
+2024-08-03T19:56:57Z Opening LevelDB in /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate
+2024-08-03T19:56:57Z Opened LevelDB successfully
+2024-08-03T19:56:57Z Using obfuscation key for /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/chainstate: 38db7d98f4fceac2
+2024-08-03T19:56:57Z Loaded best chain: hashBestChain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 date=2011-02-02T23:16:42Z progress=1.000000
+2024-08-03T19:56:57Z init message: Verifying blocks…
+2024-08-03T19:56:57Z  block index             141ms
+2024-08-03T19:56:57Z Setting NODE_NETWORK on non-prune mode
+2024-08-03T19:56:57Z block tree size = 1
+2024-08-03T19:56:57Z nBestHeight = 0
+2024-08-03T19:56:57Z loadblk thread start
+2024-08-03T19:56:57Z Loaded 0 addresses from "anchors.dat"
+2024-08-03T19:56:57Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2024-08-03T19:56:57Z loadblk thread exit
+2024-08-03T19:56:57Z 0 block-relay-only anchors will be tried for connections.
+2024-08-03T19:56:57Z init message: Starting network threads…
+2024-08-03T19:56:57Z net thread start
+2024-08-03T19:56:57Z dnsseed thread start
+2024-08-03T19:56:57Z Loading addresses from DNS seed dummySeed.invalid.
+2024-08-03T19:56:57Z msghand thread start
+2024-08-03T19:56:57Z opencon thread start
+2024-08-03T19:56:57Z addcon thread start
+2024-08-03T19:56:57Z init message: Done loading
+2024-08-03T19:56:57Z 0 addresses found from DNS seeds
+2024-08-03T19:56:57Z dnsseed thread exit
+2024-08-03T19:56:57Z Using SQLite Version 3.38.5
+2024-08-03T19:56:57Z Using wallet /mnt/d/codebases/crema/btc-ctf/bin/bitcoin/static/regtest/wallets/default
+2024-08-03T19:56:57Z init message: Loading wallet…
+2024-08-03T19:56:57Z [default] Wallet file version = 10500, last client version = 240001
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = 26b37f0bab67708adf2a9902a91bfffb32ec54a9d6fdcd16df2570fe47c1aed7, type = legacy, internal = false
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = 766aab92d2ea4ebb06694a7cd59c571e4fd97c0a187f58a7a64eb10378a5bf11, type = p2sh-segwit, internal = false
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = 300fb88199b94d45daedf935b96c66accf8cd6d2c938fa0fbdb0ae40bc04a00b, type = bech32, internal = false
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = c9618bb07a4219df49b7d720655eeb02a0033e1d3d4534ede75d453baf90c43a, type = bech32m, internal = false
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = e69ce1b8b50d95be4665a68cfb2fcde1cea729bd1c2c47e882d154d7fc8b1a5a, type = legacy, internal = true
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = 1c75462a8a0304f000d3b4660729faccadac1fe663bad18b3661f14c11a272ed, type = p2sh-segwit, internal = true
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = 5b222e3ab56706e2e784e886217f2f955724856f7ea2e6f2a5dbe0aa8381fd1d, type = bech32, internal = true
+2024-08-03T19:56:57Z [default] Setting spkMan to active: id = 64130949c1c7257ecafe97541dde27580e82b8aaa8b54e4063281fca5a72fa19, type = bech32m, internal = true
+2024-08-03T19:56:58Z [default] Keys: 8 plaintext, 0 encrypted, 0 w/ metadata, 8 total. Unknown wallet records: 0
+2024-08-03T19:56:58Z [default] Wallet completed loading in             596ms
+2024-08-03T19:56:58Z [default] setKeyPool.size() = 8000
+2024-08-03T19:56:58Z [default] mapWallet.size() = 0
+2024-08-03T19:56:58Z [default] m_address_book.size() = 6
+2024-08-03T19:57:49Z opencon thread exit
+2024-08-03T19:57:49Z addcon thread exit
+2024-08-03T19:57:49Z net thread exit
+2024-08-03T19:57:49Z Shutdown: In progress...
+2024-08-03T19:57:49Z msghand thread exit
+2024-08-03T19:57:50Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2024-08-03T19:57:50Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2024-08-03T19:57:50Z scheduler thread exit
+2024-08-03T19:57:50Z Writing 0 unbroadcast transactions to disk.
+2024-08-03T19:57:50Z Dumped mempool: 3.457e-06s to copy, 0.0101465s to dump
+2024-08-03T19:57:50Z [default] Releasing wallet
+2024-08-03T19:57:50Z Shutdown: done
