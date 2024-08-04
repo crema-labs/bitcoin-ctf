@@ -20,7 +20,7 @@ impl CtfFramework {
         std::env::set_var(key, bitcoind_path);
         let exe_path = bitcoind::exe_path().unwrap();
         let bitcoind = BitcoinD::with_conf(exe_path, &conf).unwrap();
-        Ok(CtfFramework { bitcoind })
+        Ok(Self { bitcoind })
     }
 
     pub fn clean() -> Result<()> {

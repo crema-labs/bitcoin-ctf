@@ -1,5 +1,2 @@
-current_level = 2
-
-[[completed_levels]]
-level = 1
-score = 100
+current_level = 1
+completed_levels = []

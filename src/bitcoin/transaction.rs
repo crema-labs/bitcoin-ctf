@@ -23,7 +23,7 @@ impl TransactionBuilder {
     /// Creates a new TransactionBuilder with default values.
     ///
     /// # Returns
-    /// A new TransactionBuilder instance with an empty transaction.
+    /// A new `TransactionBuilder` instance with an empty transaction.
     pub fn new(amount_out: Amount) -> Self {
         Self {
             transaction: Transaction {
@@ -64,7 +64,7 @@ impl TransactionBuilder {
     /// # Returns
     /// Self, allowing for method chaining
     #[allow(dead_code)]
-    pub fn add_output(mut self, address: Address, amount: Amount) -> Self {
+    pub fn add_output(mut self, address: &Address, amount: Amount) -> Self {
         self.transaction.output.push(TxOut {
             value: amount,
             script_pubkey: address.script_pubkey(),
