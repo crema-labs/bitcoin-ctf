@@ -11,7 +11,7 @@ use colored::Colorize;
 use rand::Rng;
 
 // Contants
-const TX_WAIT_TIME: u64 = 3;
+const TX_WAIT_TIME: u64 = 60;
 
 use crate::{
     bitcoin::{add_signature, CtfFramework, TransactionBuilder},
