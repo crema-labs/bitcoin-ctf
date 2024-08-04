@@ -3,9 +3,15 @@
 // setup and run levels
 
 use anyhow::{Ok, Result};
+use clap::CommandFactory;
 use colored::Colorize;
 
-use crate::{cli::Cli, level::Level, levels::LevelOne, state::State};
+use crate::{
+    cli::Cli,
+    level::{start_level, Level},
+    levels::LevelOne,
+    state::State,
+};
 
 pub struct Ctf {
     state: State,
@@ -21,22 +27,34 @@ impl Ctf {
 
     pub async fn run(&mut self, cli: Cli) -> Result<()> {
         match &cli.command {
-            crate::cli::Commands::New => self.start_new_game().await,
-            crate::cli::Commands::Continue => self.continue_game().await,
-            crate::cli::Commands::Retry { level } => self.retry_level(level).await,
-            crate::cli::Commands::Stats => Ok(()),
+            Some(crate::cli::Commands::New) => self.start_new_level().await,
+            Some(crate::cli::Commands::Continue) => self.continue_game().await,
+            Some(crate::cli::Commands::Retry { level }) => self.retry_level(level).await,
+            Some(crate::cli::Commands::Stats) => Ok(()),
+            None => {
+                // Display ASCII art logo
+                println!("{}", get_ascii_logo().green());
+
+                // Greet the user
+                println!("{}", "\nWelcome to Bitcoin CTF!".bright_yellow().bold());
+
+                // Display help information
+                Cli::command().print_help().unwrap();
+                Ok(())
+            }
         }
     }
 
-    async fn start_new_game(&mut self) -> Result<()> {
+    async fn start_new_level(&mut self) -> Result<()> {
         println!("{}", "Starting a new game!".green());
         // clean and save Ctf stats
         // start from level 1
         self.state.initialize_state()?;
 
-        let tx = LevelOne::setup().await?;
-        if LevelOne::run(tx).await? {
-            self.state.complete_level(1 , 100)?;
+        LevelOne::print_problem_statement();
+        let lvl1 = start_level::<LevelOne>().await?;
+        if lvl1.run().await? {
+            self.state.complete_level(1, 100)?;
             self.state.save()?;
         }
 
@@ -58,4 +76,17 @@ impl Ctf {
         println!("{}", format!("Retrying level {}", level).green());
         Ok(())
     }
+}
+
+fn get_ascii_logo() -> String {
+    r#"
+    ░▒▓███████▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░▒▓████████▓▒░▒▓████████▓▒░ 
+    ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░        
+    ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░        
+    ░▒▓███████▓▒░░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓██████▓▒░   
+    ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░        
+    ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░        
+    ░▒▓███████▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░         
+    "#
+    .to_string()
 }

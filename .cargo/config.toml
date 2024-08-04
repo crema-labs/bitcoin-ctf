@@ -1,0 +1,8 @@
+[target.'cfg(all())']
+rustflags = [
+    "-Dwarnings",
+    "-Dclippy::all",
+    "-Dclippy::pedantic",
+    "-Dclippy::nursery",
+    "-Dclippy::cargo",
+]

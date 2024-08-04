@@ -62,6 +62,7 @@ impl State {
         self.save()
     }
 
+    #[allow(dead_code)]
     pub fn get_level_score(&self, level: u32) -> Option<u32> {
         self.completed_levels
             .iter()
