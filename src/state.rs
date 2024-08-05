@@ -25,9 +25,9 @@ impl State {
         let path = Path::new(STATE_FILE);
         if path.exists() {
             let contents = fs::read_to_string(path)
-            .with_context(|| format!("Failed to read state file: {STATE_FILE}"))?;
+                .with_context(|| format!("Failed to read state file: {STATE_FILE}"))?;
             let state: Self = toml::from_str(&contents)
-                .with_context(|| format!("Failed to parse state file: {}", STATE_FILE))?;
+                .with_context(|| format!("Failed to parse state file: {STATE_FILE}"))?;
             Ok(state)
         } else {
             Ok(Self {
@@ -47,7 +47,7 @@ impl State {
         let toml_string =
             toml::to_string_pretty(self).context("Failed to serialize state to TOML")?;
         fs::write(STATE_FILE, toml_string)
-        .with_context(|| format!("Failed to write state file: {STATE_FILE}"))?;
+            .with_context(|| format!("Failed to write state file: {STATE_FILE}"))?;
         Ok(())
     }
 

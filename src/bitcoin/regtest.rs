@@ -10,6 +10,10 @@ pub struct CtfFramework {
 }
 
 impl CtfFramework {
+    /// Starts Regtest Node
+    /// with default config and bin/bitcoin/static being its data directory
+    /// 
+    /// todo ? do we really need to store `bitcoind` isnt `bitcoin.client` enough ?
     pub fn new() -> Result<Self> {
         let mut conf = Conf::default();
         conf.staticdir = Some("bin/bitcoin/static".into());

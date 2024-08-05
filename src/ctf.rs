@@ -1,6 +1,4 @@
-// Load Ctf State
-// process command line arguments
-// setup and run levels
+// Ctf Runner
 
 use anyhow::{Ok, Result};
 use clap::CommandFactory;
@@ -73,7 +71,7 @@ impl Ctf {
 
     async fn retry_level(&self, level: &u32) -> Result<()> {
         // Implement retry level logic
-        println!("{}", format!("Retrying level {}", level).green());
+        println!("{}", format!("Retrying level {level}").green());
         Ok(())
     }
 }

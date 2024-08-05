@@ -4,14 +4,15 @@ use std::{io::Write, thread};
 use anyhow::Result;
 use async_trait::async_trait;
 use bitcoin::{
-    key::{Keypair, Secp256k1}, secp256k1::{All, SecretKey}, taproot::{TaprootBuilder, TaprootSpendInfo}, Address, Amount, Network, Transaction, TxOut
+    key::{Keypair, Secp256k1},
+    secp256k1::{All, SecretKey},
+    taproot::{TaprootBuilder, TaprootSpendInfo},
+    Address, Amount, Network, Transaction, TxOut,
 };
 use bitcoind::bitcoincore_rpc::{json::ScanTxOutRequest, RawTx, RpcApi};
 use colored::Colorize;
 use rand::Rng;
 
-// Contants
-const TX_WAIT_TIME: u64 = 60;
 
 use crate::{
     bitcoin::{add_signature, CtfFramework, TransactionBuilder},
@@ -19,6 +20,10 @@ use crate::{
     level::Level,
     utils::{print_failure_messege, print_success_messege},
 };
+
+
+// Contants
+const TX_WAIT_TIME: u64 = 60;
 
 pub struct LevelOne {
     target_tx: Transaction,
@@ -33,7 +38,7 @@ impl Level for LevelOne {
         let client = &ctf_framework.bitcoind.client;
 
         // generate a keypair
-        let (secp, kp, address , tr_spend_info) = level_setup();
+        let (secp, kp, address, tr_spend_info) = level_setup();
 
         // fund generated keypair with 17Btc
         client.generate_to_address(118, &address)?;
@@ -51,7 +56,6 @@ impl Level for LevelOne {
         )])?;
         utxos_result.unspents.sort_by_key(|utxo| utxo.height);
 
-        // println!("result: {:#?} {:#?} {:#?} {:#?}",  utxos_result.height , utxos_result.unspents.len() , utxos_result.total_amount , utxos_result.tx_outs);
 
         // Generate a new tx with 17 outputs all pointing to some random address.
         let mut tx_builder = TransactionBuilder::new(utxos_result.total_amount - PROJECTED_FEE);
@@ -76,13 +80,11 @@ impl Level for LevelOne {
         let mut tx = tx_builder.build();
         let prevout_refs: Vec<&TxOut> = prevouts.iter().collect();
 
-        
         tx.output[0].value = amount - Amount::from_sat((tx.vsize() * 2).try_into().unwrap());
         tx.output[0].script_pubkey = reciever_address.script_pubkey();
 
-
         for (input_idx, _) in inputs.iter().enumerate() {
-            let _ = add_signature(
+            add_signature(
                 &mut tx,
                 input_idx,
                 &prevout_refs,
@@ -91,7 +93,6 @@ impl Level for LevelOne {
                 &secp,
             )?;
         }
-
 
         println!("\n{}", "Transaction Hex:".cyan().bold());
         println!("{}", tx.raw_hex().bright_magenta());
@@ -123,9 +124,9 @@ impl Level for LevelOne {
             .bitcoind
             .client
             .send_raw_transaction(&self.target_tx);
-        
+
         println!("\n");
-        if let Ok(_) = result {
+        if result.is_ok() {
             print_failure_messege();
             Ok(false)
         } else {
@@ -163,7 +164,7 @@ impl Level for LevelOne {
     }
 }
 
-pub fn level_setup() -> (Secp256k1<All>, Keypair, Address , TaprootSpendInfo) {
+pub fn level_setup() -> (Secp256k1<All>, Keypair, Address, TaprootSpendInfo) {
     let secp = Secp256k1::new();
     let mut rng = rand::thread_rng();
 
@@ -177,7 +178,7 @@ pub fn level_setup() -> (Secp256k1<All>, Keypair, Address , TaprootSpendInfo) {
     let new_payout_address: Address =
         Address::p2tr_tweaked(taproot_spend_info.output_key(), Network::Regtest);
 
-    (secp, keypair, new_payout_address , taproot_spend_info)
+    (secp, keypair, new_payout_address, taproot_spend_info)
 }
 
 fn level_one_title() -> String {

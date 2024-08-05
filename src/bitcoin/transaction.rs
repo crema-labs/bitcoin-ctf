@@ -20,7 +20,7 @@ pub struct TransactionBuilder {
 }
 
 impl TransactionBuilder {
-    /// Creates a new TransactionBuilder with default values.
+    /// Creates a new `TransactionBuilder` with default values.
     ///
     /// # Returns
     /// A new `TransactionBuilder` instance with an empty transaction.

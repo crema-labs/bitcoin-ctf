@@ -1,7 +1,4 @@
-// CLI to
-// - start new fresh ctf
-// - continue existing ctf
-// - retry one of past passed ctf
+// CLI commands
 
 use clap::{Parser, Subcommand};
 
